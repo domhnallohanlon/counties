@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<title>jQuery Mobile Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="home">
+	<header data-role="header">
+		<h1>Provinces</h1>
+	</header><!-- /header -->
+	<article data-role="content">
+		<ul data-role="listview">
+			<li><a href="#">
+				<h2>Connacht</h2>
+				<img src="img/connacht_flag.png" alt="The Flag of Connacht">
+				<p>There are 5 counties in Connacht</p>
+			</a></li>
+			<li><a href="#leinster">
+				<h2>Leinster</h2>
+				<img src="img/leinster_flag.png" alt="The Flag of Leinster">
+				<p>There are 12 Counties in Leinster</p>
+			</a></li>
+			<li><a href="#">
+				<h2>Munster</h2>
+				<img src="img/munster_flag.png" alt="The Flag of Munster">
+				<p>There are 6 counties in Munster</p>
+			</a></li>
+			<li><a href="#">
+				<h2>Ulster</h2>
+				<img src="img/ulster_flag.png" alt="The Flag of Ulster">
+				<p>There are 9 counties in Ulster</p>
+			</a></li>
+		</ul>
+	</article><!-- /content -->
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				 <li><a href="#" data-icon="home">Home</a></li>
+				 <li><a href="#">About</a></li>
+				 <li><a href="#">Share</a></li>
+			</ul>
+		</nav>
+	</footer><!-- /footer -->
+</section><!-- /home page -->
+
+<section data-role="page" id="leinster">
+	<header data-role="header">
+		<h2>Leinster</h2>
+		<!-- Transitions:
+		fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | none 
+		-->
+		<a href="#home" data-transition="pop">Home</a>
+	</header>
+	<article data-role="content">
+		<ul data-role="listview" data-filter="true">
+			<li data-icon="false"><a href="#">
+				<h2>Carlow</h2>
+				<img src="img/carlow_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Dublin</h2>
+				<img src="img/dublin_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Kildare</h2>
+				<img src="img/kildare_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Kilkenny</h2>
+				<img src="img/kilkenny_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Laois</h2>
+				<img src="img/laois_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Longford</h2>
+				<img src="img/longford_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Louth</h2>
+				<img src="img/louth_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Meath</h2>
+				<img src="img/meath_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Offaly</h2>
+				<img src="img/offaly_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Westmeath</h2>
+				<img src="img/westmeath_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Wexford</h2>
+				<img src="img/wexford_arms.png" alt="Coat of Arms">
+			</a></li>
+			<li data-icon="false"><a href="#">
+				<h2>Wicklow</h2>
+				<img src="img/wicklow_arms.png" alt="Coat of Arms">
+			</a></li>
+		</ul>
+	</article>
+	<footer data-role="footer" data-position="fixed">
+		<nav data-role="navbar">
+			<ul>
+				 <li><a href="#">Home</a></li>
+				 <li><a href="#">About</a></li>
+				 <li><a href="#">Share</a></li>
+			</ul>
+		</nav>
+	</footer>
+</section>
+</body>
+</html>
